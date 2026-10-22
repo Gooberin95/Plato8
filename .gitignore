@@ -1,0 +1,40 @@
+.states
+assets/external/
+.web
+# Reflex build output and local runtime
+.web/
+.states/
+*.db
+.reflex/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files and secrets
+.env
+.env.*
+
+# Node / Bun leftovers outside the generated .web directory
+node_modules/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
