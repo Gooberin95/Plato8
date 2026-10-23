@@ -43,3 +43,7 @@ Open **http://localhost:3000**.
 The first `reflex run` compiles the frontend and downloads its JavaScript toolchain. That can take a few minutes. Reflex also listens on port 8000 for the backend; you use the site at port 3000.
 
 `python3.14 --version` should print `Python 3.14.4`.
+
+## Deploying to Azure
+
+Pushes to `main` build a production package for Azure App Service (Linux, the built-in Python 3.14 runtime, no Docker). The staging and production deploy jobs stay skipped until the repository variable `AZURE_DEPLOY_ENABLED` is `true`. Setup is in [DEPLOY.md](DEPLOY.md).

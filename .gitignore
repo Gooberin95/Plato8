@@ -32,6 +32,9 @@ ENV/
 # Node / Bun leftovers outside the generated .web directory
 node_modules/
 
+# CI output. The workflow rebuilds this directory.
+deploy-package/
+
 # OS and editor
 .DS_Store
 Thumbs.db
